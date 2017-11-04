@@ -1,0 +1,10 @@
+The following assembly references had to be added manually
+
+
+Class Library :: OpenSource.WEb.Mvc.ThemeableViewEngines.dll
+	- System.ComponentModel.DataAnnotations
+	- System.Configuration
+	- System.Web
+	- System.Web.Mvc  (C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 3\Assemblies\System.Web.Mvc.dll)
+	- System.Web.ApplicationServices
+	- System.Web.WebPages (C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\Assemblies\System.Web.WebPages.dll)

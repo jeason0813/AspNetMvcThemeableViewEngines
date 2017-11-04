@@ -1,0 +1,20 @@
+﻿@{
+    var theme = Session["theme"] as string ?? string.Empty;
+    theme = Url.ThemeName();
+    if (string.IsNullOrEmpty(theme))
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    @* DEGT changed search algorithm     *@    
+    string themedLayout = HttpContext.Current.Server.MapPath(string.Format("~/Views/Shared/Themes/{0}/_Layout.cshtml", theme));
+    if (File.Exists(themedLayout))
+    {
+        Layout = string.Format("~/Views/Shared/Themes/{0}/_Layout.cshtml", theme);  @* DEGT under Shared folder instead. *@
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    
+
+}

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet"/>
+    @if (!ThemeManager.IsThemeDisabled(Context))
+    {
+        <link href="@Url.ThemeStylesheetContent()" rel="stylesheet"/>
+    }
+</head>
+<body>
+    <div class="page">
+        <div id="header">
+            <div id="title">
+                <h1>My Purple MVC Application</h1>
+            </div>
+            <div id="themeSwitcher">
+                @Html.Action("Index", "ThemeSwitcher")
+            </div>
+            <div id="logindisplay">
+                @Html.Partial("_LogOnPartial")
+            </div>
+            <div id="menucontainer">
+                <ul id="menu">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            <p style="font-style: italic;">Layout with right sidebar</p>
+            <table id="main">
+                <tbody>
+                    <tr>
+                        <td>@RenderBody()</td>
+                        <td class="sidebar"><h4>Sidebar</h4></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="footer"></div>
+        </div>
+    </div>
+</body>
+</html>

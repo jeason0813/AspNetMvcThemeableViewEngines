@@ -1,0 +1,19 @@
+﻿/*   Red Theme */
+body {
+    background-color: #c33232;
+}
+
+ul#menu {
+    border-bottom:1px solid #c33232;
+}
+
+ul#menu li a {
+    background-color: #ffbbb2;
+    color: #ff003b;
+}
+
+
+table#main td.sidebar
+{
+    background-color: #ECC6B2;
+}

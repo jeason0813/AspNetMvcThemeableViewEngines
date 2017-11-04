@@ -1,0 +1,18 @@
+﻿/*   Purple Theme */
+body {
+    background-color: #57007f;
+}
+
+ul#menu {
+    border-bottom:1px solid #57007f;
+}
+
+ul#menu li a {
+    background-color: #b200ff;
+    color: #57005c;
+}
+
+table#main td.sidebar
+{
+    background-color: #D6AEFF;
+}
